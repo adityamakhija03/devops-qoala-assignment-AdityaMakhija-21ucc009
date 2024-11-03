@@ -5,10 +5,12 @@ services:
     build:
       context: ./nginx
     ports:
+       #  "eighty:80" --> "80:80" 
       - "80:80"
     volumes:
+                                          # confi ---> conf 
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-    networks:
+    networks:   
       - nginx-network
 
   python-app:
@@ -16,10 +18,19 @@ services:
       context: ./Python
     container_name: python_app
     expose:
+       # "eight thousand" --> "8000" 
       - "8000"
     networks:
       - nginx-network
 
 networks:
   nginx-network:
+
+          # bridg --> bridge
     driver: bridge
+
+    # options:
+    # # compelex --> complex
+    #   complex_option: value
+    # ALTHOUGH the options section isn't needed here 
+    # because the basic bridge network setup is enough for the nginx and python-app containers to communicate directly
