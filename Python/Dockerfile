@@ -6,6 +6,7 @@ WORKDIR /app
 # appy.py ---> app.py
 COPY app.py /app
 
+# netiface ---> netifaces 
 RUN pip install flask netifaces
 
 # "eight thousand" ---> 8000
