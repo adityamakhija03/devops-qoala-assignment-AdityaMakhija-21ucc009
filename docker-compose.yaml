@@ -34,3 +34,4 @@ networks:
     #   complex_option: value
     # ALTHOUGH the options section isn't needed here 
     # because the basic bridge network setup is enough for the nginx and python-app containers to communicate directly
+
