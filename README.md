@@ -2,4 +2,6 @@
  This repository consists of the assignment solution for devops challenge (Qoala)
 
  Report for the assignment solution is also attached with screenshots
-  
+
+ I have also added the comments inside the files for more readability
+
